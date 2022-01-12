@@ -2,7 +2,8 @@ const predictButton = document.getElementById('predict');
 const newPredictionButton = document.getElementById('newprediction');
 const container = document.getElementById('container');
 
-predictButton.addEventListener('click', () => {
+predictButton.addEventListener('click', (e) => {
+	e.preventDefault();
 	container.classList.add("right-panel-active");
 	predict();
 });
